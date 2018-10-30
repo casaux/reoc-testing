@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1">
+<title>myCASA</title>
+<meta name="viewport" content="initial-scale=1">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/furnace.min.css">
+	<link rel="stylesheet" href="css/lead.css">
+	<script type="text/javascript" src="js/furnace.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+  <script src="js/jquery.js"></script>
+
+</head>
+
+<body class="live-demo au-body au-grid arn-application">
+
+<main class="au-grid">
+<body class="live-demo au-body au-grid js">
+	<header class="au-header logo au-body au-body--dark" role="banner">
+	<div class="header">
+		<div class="container">
+	    <div class="row">
+	      <div class="col-md-9 col-xs-7">
+	        <a class="au-header__brand" href="welcome-reg.html">
+	          <img class="au-header__brand-image" alt="my CASA" src="img/CASALOGO-white-i.svg">
+	        </a>
+	      </div>
+	      <div class="col-md-3 col-xs-5"><a class="au-btn au-btn--dark" href="mycasa-reoc.html">Sign out</a></div>
+	    </div>
+		</div>
+	</div>
+	</header>
+	<div class="banner">
+	<div class=container>
+		<style>
+			.banner {padding-left: 25px;}
+			.banner {padding-top: 10px;}
+			.banner {padding-bottom: 10px;}
+
+		</style>
+		This service is currently in beta, we encourage you to <a href="feedback.html">provide feedback</a>
+	</div>
+	</div>
+
+
+	<div class="body">
+		<div class="container">
+
+			<div class="col-md-8">
+			<header class="au-header" role="banner">
+				<h1 class="au-header-heading">Amy's Flying School</h1>
+				ARN: 3214567<br>
+				<a class="au-direction-link au-direction-link--left m-t-1" href="dashboard.html">Back to my account</a>
+			</header>
+
+			<div id="in-progress">
+				<h3>Application in progress</h3>
+				<ul class="list-unstyled m-t-1">
+					<li class="row alt-row in-progress">
+						<div class="col-md-5 col-xs-5">
+							<a href="reoc-org-before-you-begin.html" class=" ">Remote operator’s Certificate (ReOC)</a>
+						</div>
+						<div class="col-md-2 col-xs-2">
+							<span class="badge badge-info">Submitted</span>
+						</div>
+						<div class="col-md-4 col-xs-4">
+							<a href="#" class="btn-delete padding-0" data-toggle="modal" data-target="#delete-modal-app"><span class="fas fa-minus-circle"></span>Withdraw application <span class="sr-only">ReOC application</span></a>
+						</div>
+					</li>
+				</ul>
+
+				<br>
+			</div>
+
+			<h3>Applications</h3>
+				<a href="#" class="au-direction-link" id="link-active">Register a new drone</a>
+				<br><br>
+
+
+				<br>
+				<a class="au-cta-link" href="manage-drones.html">Manage Drones</a>
+				<p style="margin-top:0;">Manage your registered drones</p>
+				<br>
+				<a class="au-cta-link" href="manage-org.html">Manage organisation</a>
+				<p style="margin-top:0;">Manage people, details and account </p>
+			</div>
+
+
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="footer-wrapper">
+			<iframe src="footer.html" frameborder="0" border="0" scrolling="no"></iframe>
+		</div>
+	</div>
+
+
+</main>
+
+<script>
+		var type = window.location.hash.substr(1);
+		if (type=='in-progress'){
+			$('#in-progress').removeClass('hidden');
+			$('#download').addClass('hidden');
+			$('#download').next().remove('br');
+		}
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>My CASA</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/furnace.min.css">
+  <link rel="stylesheet" href="css/lead.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="live-demo au-body au-grid js">
+  <header class="au-header logo au-body--dark" role="banner">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 col-xs-7">
+          <a class="au-header__brand" href="dashboard.html">
+            <img class="au-header__brand-image" alt="my CASA" src="img/CASALOGO-white-i.svg">
+          </a>
+        </div>
+        <div class="col-md-3 col-xs-5">
+          <div id="menu-col">
+            <div class="au-btn au-btn--dark" id="signout">
+              <div>Menu</div>
+              <div id="menu">
+                <div class="menu"><a href="profile-dashboard.html" id="home">Switch profile</a></div>
+                <div class="menu"><a href="#">Edit profile</a></div>
+                <div class="menu"><a href="mycasa-renew.html">Sign out</a></div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="banner">
+    <div class=container>
+      <div class="row">
+        <div class="col-md-12">
+          This service is currently in beta, we encourage you to <a href="feedback.html">provide feedback</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=container>
+    <div class="row">
+      <div class="col-md-12">
+        <nav class="au-breadcrumbs" aria-label="breadcrumb">
+          <ul class="au-link-list au-link-list--inline">
+            <li><a href="dashboard-wendy.html" id="bread-home">Wendy Williams</a></li>
+            <li>RPA operators certificate (ReOC)</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <main id="main-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <div role="alert" class="au-page-alerts au-page-alerts--success hidden m-t-2" id="save">
+            <h3>Business name added to application</h3>
+          </div>
+          <h2 class="au-display-xl m-t-2">RPA operators certificate (ReOC)</h2>
+          <a class="au-direction-link au-direction-link--left" href="javascript:history.back()">Back</a>
+
+<form name="business-details" method="get" class="form-horizontal" action="app-reoc-tasklist-links.html#cert" id="name">
+          <h3 class="m-t-2">Business Details (optional)</h3>
+          <section class="arn-details">
+            <!--<div class="student hidden" id="names">
+              <p>&nbsp;</p>
+              <ul class="list-unstyled m-t-1">
+                <li class="row alt-row xs-hidden">
+                  <div class="col-md-7 col-sm-5 col-xs-12"><strong>Trading Name(s)</strong></div>
+                  <div class="col-md-2 col-sm-2 col-xs-12"></div>
+                  <div class="col-md-2 col-sm-2 col-xs-12"></div>
+                </li>
+                <li class="row">
+                  <div class="col-md-7 col-sm-5 col-xs-12" id="wendy">Wendy's Weddings</div>
+                  <div class="col-md-2 col-sm-2 col-xs-12"><a href="#edit" onclick=" ">Edit</a></div>
+                  <div class="col-md-2 col-sm-2 col-xs-12"><a href="#" data-toggle="modal" data-target="#delete-modal-app">Delete</a></div>
+                </li>
+              </ul>
+              <p>&nbsp;</p>
+            </div>-->
+
+              <div class="form-section" id="business-name">
+                <div class="form-section">
+                  <label for="abn-input">Australian Business Number (ABN)</label>
+                  <span id="abn-error" style="color:#d82c52;"></span>
+                  <input class="au-text-input no-spinners" name="abninput" id="abninput" type="text" required>
+                </div>
+                <div class="form-section">
+                <label for="name-input">Business Name</label>
+                <span id="name-error" style="color:#d82c52;"></span>
+                <input class="au-text-input" name="nameinput" id="nameinput" type="text" required>
+
+                <!--<a id="add-name" href="#" class="au-btn au-btn--secondary">Add trading name</a>-->
+               </div>
+
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 m-t-2"><br>
+          <button type="submit" class="au-btn" id="next">Save</button>
+          <div class="save-exit">
+            <a href="#" class="au-btn au-btn--secondary" data-toggle="modal" data-target="#back-modal-app">
+              Back to application
+            </a><!--&nbsp; to continue this application later-->
+          </div>
+        </div>
+      </div>
+    </div>
+</form>
+
+<!--delete modal -->
+<div class="modal fade" id="back-modal-app" tabindex="-1" role="dialog" aria-labelledby="na" style="display: none;" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Back to application</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Your information will not be saved, are you sure?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="au-btn au-btn--secondary" data-dismiss="modal">No</button>
+        <button type="button" class="au-btn" data-dismiss="modal" id="back-yes-app">Yes</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  </main>
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <iframe src="footer.html" frameborder="0" border="0" scrolling="no"></iframe>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/furnace.min.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery-validate.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+  <script>
+  $( document ).ready( function () {
+    //$('a#next').addClass('hidden');
+    var type = window.location.hash.substr(1);
+    if (type == 'edit') {
+      $('#name').attr('checked','checked');
+      $('#names, #next, #business-name').removeClass('hidden');
+      $('#abn-input').attr('value',"12345678901");
+      $('#name-input').attr('value',"Wendy's Wedding");
+      $('.save-exit a').attr('href','app-repc-tasklist.html#cert');
+      $('#add-name').text('Update business name');
+        $('#add-name').click(function(){
+          $('#wendy').text("Wendy's Wedding PTY LTD");
+        });
+      /*$('#name-input, #abn-input').css('background-color','#ffc');*/
+    }
+    if (type == 'org') {
+      $('a#home').attr("href", "profile-dashboard.html#org-wendy");
+      $('a#bread-home').attr("href", "dashboard-org.html#save").text("Wendy's Wedding");
+      $('.save-exit a').attr("href", "dashboard-org.html#save");
+      $('a#next').attr("href", "add-personnel-mc.html#org");
+    }
+    if (type == 'task') {
+      //$('form').attr("action", "app-reoc-tasklist-links.html#cert");
+    }
+
+    $('input[name="name"]').change(function() {
+      $('a#next').removeClass('hidden');
+      if ($('#name').is(':checked')) {
+        $('#business-name').removeClass('hidden');
+      } else {
+        $('#business-name, #names, #save').addClass('hidden');
+      }
+    });
+    $('#add-name').click(function (){
+        $('#names, #save').removeClass('hidden');
+        $('#save').fadeOut(3000);
+    });
+    $('#back-yes-app').click(function(){
+      window.location.href="app-reoc-tasklist-links.html";
+    });
+
+
+	//Form Validation
+	$( "#name" ).validate( {
+				rules: {
+					abninput: "required",
+					nameinput: "required"
+				},
+				messages: {
+					abninput: "Please enter your ABN",
+					nameinput: "Please enter your Business Name"
+				}
+			} );
+
+	});
+
+  </script>
+</body>
+
+</html>

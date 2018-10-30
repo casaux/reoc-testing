@@ -1,0 +1,185 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>myCASA</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/furnace.min.css">
+	<link rel="stylesheet" href="css/lead.css">
+<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="live-demo au-body au-grid arn-application">
+
+<main class="au-grid">
+
+<body class="live-demo au-body au-grid js">
+	<header class="au-header logo au-body au-body--dark" role="banner">
+	<div class="header">
+		<div class="container">
+	    <div class="row">
+	      <div class="col-md-9 col-xs-7">
+	        <a class="au-header__brand" href="dashboard.html">
+	          <img class="au-header__brand-image" alt="my CASA" src="img/CASALOGO-white-i.svg">
+	        </a>
+	      </div>
+	      <div class="col-md-3 col-xs-5">
+
+			  <div  id="menu-col">
+
+				  <div class="au-btn au-btn--dark" id="signout">
+
+					<div>Menu</div>
+
+					<div id="menu">
+						<div class="menu"><a href="profile-dashboard.html">Switch profile</a></div>
+						<div class="menu"><a href="#">Edit profile</a></div>
+						<div class="menu"><a href="mycasa-renew.html">Sign out</a></div>
+					</div>
+
+				  </div>
+
+			</div>
+
+
+
+		</div>
+	    </div>
+		</div>
+	</div>
+	</header>
+	<div class="banner">
+	<div class=container>
+		<style>
+			.banner {padding-left: 25px;}
+			.banner {padding-top: 10px;}
+			.banner {padding-bottom: 10px;}
+			.au-cta-link.disabled:hover, .au-cta-link.disabled{cursor:not-allowed !important; filter: grayscale(100%);opacity:0.7;text-decoration: none !important}
+		</style>
+		This service is currently in beta, we encourage you to <a href="feedback.html">provide feedback</a>
+	</div>
+	</div>
+
+		<div class="container">
+
+			<div class="col-md-12">
+				<div role="alert" class="au-body au-page-alerts au-page-alerts--warning m-t-2">
+									<h3>ReOC renewal</h3>
+									<p>Your ReOC is about to expiry, please go to the <a href="manage-reoc-renewal.html#flight" >manage reoc</a> section for renewal.</p>
+								</div>
+			<header class="au-header" role="banner">
+				<h1 class="au-header-heading">Welcome to myCASA</h1>
+
+				<br />
+
+
+				<strong id="name">Wendy Williams</strong> <span id="arn-num">ARN: 1234567</span>
+
+				<hr class="individual seperator" />
+
+
+				<!--<h3>Manage your ReOC</h3>-->
+								<a class="au-cta-link" href="manage-reoc-renewal.html#flight">Manage your ReOC</a>
+								<br />
+
+				<div id="in-progress" class="hidden">
+				 <h3>Submitted Applications</h3>
+				 <ul class="list-unstyled m-t-1">
+					 <li class="row alt-row">
+						 <div class="col-md-5 col-xs-5"><a href="drone-details.html" class=" ">RPA operator’s certificate (ReOC)</a>
+							 <br>
+							 Individual ReOC<!--<br>
+							 Multi-Rotor Up to 25kg - RePL Training-->
+						 </div>
+						 <div class="col-md-3 col-xs-3">
+							 <span class="badge badge-info">Under review</span>
+						 </div>
+						 <!--<div class="col-md-3 col-xs-3">
+							 <a href="#" class="btn-delete padding-0" data-toggle="modal" data-target="#delete-modal-app"><span class="fas fa-minus-circle"></span> Withdraw Application</a>
+						 </div>-->
+					 </li>
+				 </ul>
+			 </div>
+
+			 <div id="save" class="hidden">
+			 	 <h3>Application in progress</h3>
+			 	 <ul class="list-unstyled m-t-1">
+			 		 <li class="row alt-row">
+			 			 <div class="col-md-5 col-xs-5"><a href="drone-details.html" class=" ">RPA operator’s certificate (ReOC)</a>
+			 				 <br>
+			 				 Individual ReOC<!--<br>
+			 				 Multi-Rotor Up to 25kg - RePL Training-->
+			 			 </div>
+			 			 <div class="col-md-3 col-xs-3">
+			 				 <a href="#" class="btn-delete padding-0" data-toggle="modal" data-target="#delete-modal-app"><span class="fas fa-minus-circle"></span> Withdraw Application</a>
+			 			 </div>
+			 		 </li>
+			 	 </ul>
+			  </div>
+
+
+
+				<div id="link-active">
+
+
+				<!--<h3>New applications</h3>
+
+				<a class="au-cta-link" href="amy-before-you-begin.html">RPA operator's certificate (ReOC)</a>
+-->
+
+			</div>
+
+
+			</header>
+
+		</div>
+	</div>
+
+<div class="footer">
+		<div class="footer-wrapper">
+			<iframe src="footer.html" frameborder="0" border="0" scrolling="no"></iframe>
+		</div>
+	</div>
+
+
+</main>
+
+<script type="text/javascript" src="js/furnace.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.js"></script>
+<script>
+var type = window.location.hash.substr(1);
+		if (type=='org'){
+			//$('a#home').attr("href", "profile-dashboard.html#org-wendy");
+			//$('a#bread-home').attr("href", "dashboard-org.html#save").text("Wendy's Wedding");
+			$('#name').text("Wendy's Weddings Pty Ltd");
+			$('#arn-num').text("ARN 7654321");
+			$('#manage').attr('href','manage-reoc-renew.html#org');
+			//$('.save-exit a').attr("href", "dashboard-org.html#save");
+			//$('a#next').attr("href", "add-personnel-crp.html#org");
+		}
+		if (type=='in-progress'){
+			$('#in-progress').removeClass('hidden');
+			$('#save, #link-active').addClass('hidden');
+		}
+		if (type=='save'){
+			$('#save').removeClass('hidden');
+
+			$('#in-progress').addClass('hidden');
+		}
+
+			if(type=='in-progress'){
+				$('#signout').attr("href", "mycasa-update.html");
+			}else if(type !=='org'){
+				//alert(3);
+				$('#signout').attr("href", "mycasa.html");
+			}
+
+
+</script>
+
+</body>
+</html>

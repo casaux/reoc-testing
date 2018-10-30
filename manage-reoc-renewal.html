@@ -1,0 +1,316 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1">
+<title>myCASA</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+<!-- OPTIMIZE:  -->
+	<link rel="stylesheet" href="css/furnace.min.css">
+	<link rel="stylesheet" href="css/lead.css">
+		<link rel="stylesheet" href="css/main.css">
+	<script type="text/javascript" src="js/furnace.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+</head>
+
+<body class="live-demo au-body au-grid js">
+<main class="au-grid">
+<body class="live-demo au-body au-grid js">
+	<header class="au-header logo au-body au-body--dark" role="banner">
+	<div class="header">
+		<div class="container">
+	    <div class="row">
+	      <div class="col-md-9 col-xs-7">
+	        <a class="au-header__brand" href="dashboard-approved.html">
+	          <img class="au-header__brand-image" alt="my CASA" src="img/CASALOGO-white-i.svg">
+	        </a>
+	      </div>
+	      <div class="col-md-3 col-xs-5"><a class="au-btn au-btn--dark" href="mycasa-renew.html">Sign out</a></div>
+	    </div>
+		</div>
+	</div>
+	</header>
+	<div class="banner">
+	<div class=container>
+		<style>
+			.banner {padding-left: 25px;}
+			.banner {padding-top: 10px;}
+			.banner {padding-bottom: 10px;}
+		</style>
+		This service is currently in beta, we encourage you to <a href="feedback.html">provide feedback</a>
+	</div>
+	</div>
+
+
+	<div class="body">
+		<div class="container">
+
+			<div class="col-md-10">
+			<nav class="au-breadcrumbs" aria-label="breadcrumb">
+			  <ul class="au-link-list au-link-list--inline">
+				<li><a href="dashboard-approved.html">Wendy Williams</a></li>
+				<li>Manage your ReOC</li>
+			  </ul>
+			</nav>
+			<div role="alert" class="hidden au-page-alerts au-page-alerts--error" id="dec-error" style="width:100%;">
+				<h3>Declaration incomplete</h3>
+			</div>
+			<header class="au-header" role="banner">
+				<h1 class="m-t-0">Manage your ReOC</h1>
+				<a class="au-direction-link au-direction-link--left" href="dashboard-approved.html">Back</a>
+			</header>
+
+	<div class="container">
+	<div class="row">
+		<div class="col-md-10">
+			<div class="au-page-alerts au-page-alerts--warning" role="alert">
+				<h4>Please renew your ReOC</h4>
+				<h5>Date Issued</h5>
+			16/12/2018
+			<h5>Expiry date</h5>
+			16/12/2019
+		</div>
+<p>&nbsp;</p>
+				<div class="au-callout m-t-1">
+						<p>Renewing your RPA operator’s certificate (ReOC) will incur a fee of $950.</p>
+						<p>Please ensure all the information is current. Any updates will be an additional $450 (A CASA inspector will review the updates for approval).</p>
+				</div>
+
+				<div class="item">
+					<h4 id="heading-cert">1. Operator's Certificate<span class="badge badge-secondary float-right">Not started</span></h4>
+					<div style="color:#666666;" class="m-t-1 au-callout">Name on the certificate will be issued to:<br>
+					Wendy Williams</div>
+
+					<div class="student hidden" id="names">
+						<ul class="list-unstyled m-t-1">
+							<li class="row alt-row xs-hidden">
+								<div class="col-md-10 col-sm-5 col-xs-12"><strong>Business Name</strong></div>
+								<div class="col-md-1 col-sm-2 col-xs-12"></div>
+								<div class="col-md-1 col-sm-2 col-xs-12"></div>
+							</li>
+							<li class="row">
+								<div class="col-md-10 col-sm-5 col-xs-12">Wendy's Weddings</div>
+								<div class="col-md-1 col-sm-2 col-xs-12"><a href="business-details.html#edit">Edit</a></div>
+								<div class="col-md-1 col-sm-2 col-xs-12"><a href="#" data-toggle="modal" data-target="#delete-modal-app">Delete</a></div>
+							</li>
+						</ul>
+
+					</div>
+					  <p><a class="au-cta-link" href="business-details.html#task" style="font-size:1.1rem;font-weight:500;">Add business name(s)</a></p>
+				</div>
+
+				<div class="item">
+					<h4 id="heading-drones">2. RPA and Operations<span class="badge badge-secondary float-right">Not started</span></h4>
+					<p style="color:#666666;" class="m-t-0">Add your RPA and operations details.</p>
+
+					<div class="student">
+						<ul class="list-unstyled m-t-1 hidden" id="drones">
+							<li class="row alt-row">
+								<div class="col-md-2 col-xs-3"><strong>Category</strong></div>
+								<div class="col-md-2 col-xs-3"><strong>Weight Class</strong></div>
+								<div class="col-md-3 col-xs-3"><strong>Type</strong></div>
+								<div class="col-md-3 col-xs-3"><strong>Operation</strong></div>
+								<div class="col-md-1 col-xs-3"></div>
+								<div class="col-md-1 col-xs-3"></div>
+							</li>
+							<li class="row">
+								<div class="col-md-2 col-xs-3">Multi-Rotor</div>
+								<div class="col-md-2 col-xs-3">Up to 25kg</div>
+								<div class="col-md-3 col-xs-3">N/A</div>
+								<div class="col-md-3 col-xs-3">RPAS Aerial Work</div>
+								<div class="col-md-1 col-xs-3"><a href="#">Edit</a></div>
+								<div class="col-md-1 col-xs-3"><a href="#">Delete</a></div>
+							</li>
+							<li class="row" id="aero">
+								<div class="col-md-2 col-xs-3">Aeroplane</div>
+								<div class="col-md-2 col-xs-3">Up to 25kg</div>
+								<div class="col-md-3 col-xs-3">N/A</div>
+								<div class="col-md-3 col-xs-3">RPAS Aerial Work</div>
+								<div class="col-md-1 col-xs-3"><a href="#">Edit</a></div>
+								<div class="col-md-1 col-xs-3"><a href="#">Delete</a></div>
+							</li>
+						</ul>
+					</div>
+					<p><a class="au-cta-link" href="drone-details-update.html#task" style="font-size:1.1rem;font-weight:500;">Add RPA details</a></p>
+				</div>
+
+
+				<div class="item">
+					<h4 id="heading-personnel">3. Personnel <span class="badge badge-secondary float-right">Not started</span></h4>
+					<p style="color:#666666;" class="m-t-0">Add your Chief Remote Pilot and Maintenance Controller.</p>
+
+					<div class="student">
+						<ul class="list-unstyled m-t-1 hidden" id="personnel">
+							<li class="row alt-row">
+								<div class="col-md-5 col-xs-6"><strong>Name</strong></div>
+								<div class="col-md-2 col-xs-3"><strong>ARN</strong></div>
+								<div class="col-md-3 col-xs-3"><strong>Role</strong></div>
+								<div class="col-md-1 col-xs-3"></div>
+								<div class="col-md-1 col-xs-3"></div>
+							</li>
+							<li class="row">
+								<div class="col-md-5 col-xs-6">Wendy Williams</div>
+								<div class="col-md-2 col-xs-3">1234567</div>
+								<div class="col-md-3 col-xs-3">Chief Remote Pilot</div>
+								<div class="col-md-1 col-xs-3"><a href="edit-personnel-crp.html">Edit</a></div>
+								<div class="col-md-1 col-xs-3"><a href="#">Delete</a></div>
+							</li>
+							<li class="row" id="personnel-mc">
+								<div class="col-md-5 col-xs-6">Wendy Williams</div>
+								<div class="col-md-2 col-xs-3">1234567</div>
+								<div class="col-md-3 col-xs-3">Maintenance Controller</div>
+								<div class="col-md-1 col-xs-3"><a href="#">Edit</a></div>
+								<div class="col-md-1 col-xs-3"><a href="#">Delete</a></div>
+							</li>
+						</ul>
+					</div>
+					<p><a class="au-cta-link" href="add-personnel-crp.html#task" id="personnel-add-crp" style="font-size:1.1rem;font-weight:500;">Add Chief Remote Pilot</a><br>
+					<a class="au-cta-link" href="add-personnel-mc.html#task" id="personnel-add-mc" style="font-size:1.1rem;font-weight:500;">Add Maintenance Controller</a></p>
+				</div>
+
+				<div class="item">
+					<h4 id="heading-docs">4. Documents <span class="badge badge-secondary float-right">Not started</span></h4>
+					<p style="color:#666666;" class="m-t-0">Upload your manual and required document for review.</p>
+
+					<div class="student">
+
+						<ul class="list-unstyled m-t-1 hidden" id="manual">
+							<li class="hidden-sm-down row alt-row">
+								<div class="col-md-5 col-xs-12">
+									<strong>Filename</strong>
+								</div>
+								<div class="col-md-5 col-xs-12">
+									<strong>Type</strong>
+								</div>
+								<div class="col-md-1 col-xs-12">
+
+								</div>
+							</li>
+							<li class="row">
+								<div class="col-md-5 col-xs-12" id="manual-update-name"><a href="#">Updated_wendysWedding</a></div>
+								<div class="col-md-5 col-xs-4">Operations Manual
+								</div>
+								<div class="col-md-1 col-xs-3"><a href="upload-app-manual.html#update">Edit</a></div>
+								<div class="col-md-1 col-xs-3"><a href="#" class="del">Delete</a></div>
+							</li>
+							<li class="row " id="library">
+								<div class="col-md-5 col-xs-12"><a href="#">WendysLibrary</a></div>
+								<div class="col-md-5 col-xs-4">Operations procedure (Library)
+								</div>
+								<div class="col-md-1 col-xs-3"><a href="#">Edit</a></div>
+								<div class="col-md-1 col-xs-3"><a href="#" class="del">Delete</a></div>
+							</li>
+							<li class="row " id="syllabus">
+								<div class="col-md-5 col-xs-12"><a href="#">TrainingSyllabus</a></div>
+								<div class="col-md-5 col-xs-4">Training Syllabus
+								</div>
+								<div class="col-md-1 col-xs-3"><a href="#">Edit</a></div>
+								<div class="col-md-1 col-xs-3"><a href="#" class="del">Delete</a></div>
+							</li>
+							<li class="row " id="flight">
+								<div class="col-md-5 col-xs-12">
+									<a href="#">WendysFlightManual</a></div>
+								<div class="col-md-5 col-xs-4">Maintenance Manual and Flight Manual
+								</div>
+								<div class="col-md-1 col-xs-3"><a href="#">Edit</a></div>
+								<div class="col-md-1 col-xs-3"><a href="#" class="del">Delete</a></div>
+							</li>
+						</ul>
+					</div>
+					<p>
+						<a class="au-cta-link" href="upload-app-manual.html" id="upload-manual" style="font-size:1.1rem;font-weight:500;">Add Manual</a><br>
+						<a class="au-cta-link" href="upload-app-library.html" id="upload-library" style="font-size:1.1rem;font-weight:500;">Add Operations procedure (Library)</a><br>
+						<a class="au-cta-link" href="upload-app-syllabus.html" id="upload-syllabus" style="font-size:1.1rem;font-weight:500;">Add Training Syllabus</a><br>
+						<a class="au-cta-link" href="upload-app-syllabus.html" id="upload-aircraft" style="font-size:1.1rem;font-weight:500;">Maintenance Manual and Flight Manual</a>
+					</p>
+				</div>
+
+
+<br>
+
+
+		<div class="" id="proceed-payment">
+			<a href="app-reoc-summary.html#renew" class="au-btn" id="next">Finalise application for renewal</a>
+		</div>
+
+		</div>
+	</div>
+</div><!-- container -->
+			</div>
+			</div>
+	</div>
+
+	<!--delete modal -->
+	<div class="modal fade" id="delete-modal-app" tabindex="-1" role="dialog" aria-labelledby="na" style="display: none;" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Delete business name</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					Are you sure you want to delete the business name, Wendy's Wedding?
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="au-btn au-btn--secondary" data-dismiss="modal">No</button>
+					<button type="button" class="au-btn" data-dismiss="modal" id="delete-yes-app">Yes</button>
+				</div>
+			</div>
+		</div>
+		</div>
+
+
+<div class="footer">
+		<div class="footer-wrapper">
+			<iframe src="footer.html" frameborder="0" border="0" scrolling="no"></iframe>
+		</div>
+	</div>
+</main>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+<script>
+
+
+	var type = window.location.hash.substr(1);
+
+	if (type == 'flight') {
+		$('#drones, #library, .dec, #names, #manual, #syllabus, #flight').removeClass('hidden');
+		$('#heading-drones span, #upload-manual, #upload-library').addClass('hidden');
+
+		$('#personnel').removeClass('hidden');
+		$('#personnel').parent().find('p').remove();
+		$('#heading-cert span').addClass('hidden');
+		$('#heading-drone span').addClass('hidden');
+		$('#heading-personnel span').addClass('hidden');
+		$('#heading-docs span').addClass('hidden');
+
+		$('#manual').removeClass('hidden');
+		$('#next').removeClass('hidden');
+		//$('#personnel-add-crp, #personnel-add-mc').addClass('hidden');
+
+		$('#upload-manual, #upload-aircraft, #upload-syllabus, #upload-library, #personnel-add-crp, #personnel-add-mc').addClass('hidden');
+	}
+	if (type == 'drone-update') {
+		$('#drones, #library, .dec, #names, #aero, #payment-update, #proceed-payment').removeClass('hidden');
+		$('#heading-drones span').addClass('hidden');
+
+		$('#personnel').removeClass('hidden');
+		$('#personnel').parent().find('p').remove();
+		$('#heading-cert span').addClass('hidden');
+		$('#heading-personnel span').addClass('hidden');
+		$('#heading-drones span').removeClass('badge-secondary').text('Saved').addClass('badge-success');
+		$('#heading-docs span').addClass('hidden');
+
+		$('#manual').removeClass('hidden');
+		$('#next').removeClass('hidden');
+		$('#upload-manual, #upload-library').addClass('hidden');
+		$('#personnel-add-crp, #personnel-add-mc').addClass('hidden');
+	}
+
+</script>
+
+
+</body>
+</html>

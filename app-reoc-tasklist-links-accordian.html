@@ -1,0 +1,1111 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1">
+  <title>myCASA</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <!-- OPTIMIZE:  -->
+  <link rel="stylesheet" href="css/furnace.min.css">
+  <link rel="stylesheet" href="css/lead.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script type="text/javascript" src="js/furnace.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+
+
+<style type="text/css">
+.au-body ul.au-accordion-group{
+	  list-style-type: none !important;
+	padding:0 !important;
+	margin:0 !important;
+}
+
+
+.item {
+    margin: 0 0 4em 0;
+    border: 0 !important;
+    padding: 0 !important;
+    background:none !important;
+    border-radius: 0 !important;
+    border-top: 0 !important;
+    box-shadow: none !important;
+}
+
+
+</style>
+
+</head>
+
+<body class="live-demo au-body au-grid js">
+  <main class="au-grid">
+    <body class="live-demo au-body au-grid js">
+      <header class="au-header logo au-body au-body--dark" role="banner">
+        <div class="header">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-9 col-xs-7">
+                <a class="au-header__brand" href="dashboard-approved.html">
+                  <img class="au-header__brand-image" alt="my CASA" src="img/CASALOGO-white-i.svg">
+                </a>
+              </div>
+              <div class="col-md-3 col-xs-5"><a class="au-btn au-btn--dark" href="mycasa-renew.html">Sign out</a></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="banner">
+        <div class=container>
+          <style>
+            .banner {
+              padding-left: 25px;
+            }
+
+            .banner {
+              padding-top: 10px;
+            }
+
+            .banner {
+              padding-bottom: 10px;
+            }
+          </style>
+          This service is currently in beta, we encourage you to <a href="feedback.html">provide feedback</a>
+        </div>
+      </div>
+
+
+      <div class="body">
+        <div class="container">
+          <div class="col-md-10">
+            <nav class="au-breadcrumbs" aria-label="breadcrumb">
+              <ul class="au-link-list au-link-list--inline">
+                <li><a href="dashboard-approved.html">Wendy Williams</a></li>
+                <li>Apply for ReOC</li>
+              </ul>
+            </nav>
+             <div role="alert" class="hidden au-page-alerts au-page-alerts--error" id="dec-error" style="width:100%;">
+              <h3>Please check that you have added details into all sections below before finalising your application</h3>
+            </div>
+            <div class="au-header" role="banner">
+              <h1 class="m-t-0">Apply for ReOC</h1>
+              <a class="au-direction-link au-direction-link--left" href="javascript:history.back()">Back</a>
+            </div>
+
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10">
+                  <p class="lead">Complete the steps below to get your RPA operators certificate (ReOC).</p>
+                  <div class="au-callout m-t-1">
+										<strong>RPA operator’s certificate (ReOC) fee:</strong><br>$950
+									</div>
+
+                  <div class="item">
+                    <h4 id="heading-cert">1. Operator's details<span class="badge badge-secondary float-right hidden">Not started</span></h4>
+                    <div class="m-t-1 au-callout" style="border-left:none;background-color: #f8f9fa;color:#666666;padding:1rem;margin-bottom:0 !important;">Name on the certificate will be issued to:<br>
+                    <strong>Wendy Williams</strong></div>
+
+					<section class="au-accordion">
+  						<a href="#accordion-business-name" class="au-accordion__title js-au-accordion au-accordion--closed" aria-controls="accordion-business-name" aria-expanded="true" aria-selected="true" onclick="return AU.accordion.Toggle( this )" href=#accordion-business-name>
+   						 Business name(s)<span style="opacity:0.5;text-decoration:none"> - (optional)</span>
+ 						</a>
+
+					  <div class="au-accordion__body au-accordion--closed" id="accordion-business-name">
+						<div class="au-accordion__body-wrapper">
+						  <h3 class="m-t-2">Add business Details (optional)</h3>
+          <section class="arn-details">
+			                  <div class="form-section">
+                  <label for="abn-input">Australian Business Number (ABN)</label>
+                  <span id="abn-error" style="color:#d82c52;"></span>
+                  <input class="au-text-input no-spinners" name="abninput" id="abninput" type="text" required>
+                </div>
+                <div class="form-section">
+                <label for="name-input">Business Name</label>
+                <span id="name-error" style="color:#d82c52;"></span>
+                <input class="au-text-input" name="nameinput" id="nameinput" type="text" required>
+
+                <!--<a id="add-name" href="#" class="au-btn au-btn--secondary">Add trading name</a>-->
+               </div>
+
+          </section>
+															  <a href="#" class="au-btn">
+              Save
+          </a>
+						</div>
+					  </div>
+				
+					</section>
+					  
+
+					  
+                  </div>
+											
+					
+                  <div class="item">
+                    <h4 id="heading-drones">2. RPA and Operations<span class="badge badge-secondary float-right">Not started</span></h4>
+                    <p style="color:#666666;" class="m-t-0">Add your RPA and operations details.</p>
+					 <section class="au-accordion">
+  <a href="#accordion-rpa-details" class="au-accordion__title js-au-accordion au-accordion--closed" aria-controls="accordion-rpa-details" aria-expanded="true" aria-selected="true" onclick="return AU.accordion.Toggle( this )">
+    RPA details
+  </a>
+
+  <div class="au-accordion__body au-accordion--closed" id="accordion-rpa-details">
+    <div class="au-accordion__body-wrapper">
+      <form name="drone-details" method="get" class="form-horizontal" action="app-reoc-tasklist-links.html#drone" id="drone">
+          <div class="student m-t-3 hidden">
+            <ul class="list-unstyled m-t-1">
+              <li class="row alt-row xs-hidden">
+                <div class="col-md-3 col-sm-3 col-xs-3"><strong>Category</strong></div>
+                <div class="col-md-2 col-sm-2 col-xs-3"><strong>Weight Class</strong></div>
+                <div class="col-md-2 col-sm-2 col-xs-3"><strong>Type</strong></div>
+                <div class="col-md-3 col-sm-3 col-xs-3"><strong>Operation</strong></div>
+                <div class="col-md-2 col-sm-2 col-xs-3"></div>
+              </li>
+              <li class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12">Multi-Rotor</div>
+                <div class="col-md-2 col-sm-2 col-xs-12">Up to 25kg</div>
+                <div class="col-md-2 col-sm-2 col-xs-12"> N/A</div>
+                <div class="col-md-3 col-sm-3 col-xs-12">RPAS Aerial Work</div>
+                <div class="col-md-2 col-sm-2 col-xs-12"><a href="#">Delete</a></div>
+              </li>
+            </ul>
+            <p>&nbsp;</p>
+          </div>
+		
+		  
+		  <h3 class="m-t-2">Add Remotely Piloted Aircraft details</h3>
+          <div class="form-section m-t-1">
+            <label for="category">Category</label>
+            <select id="category" name="category" class="au-select au-select--block" required>
+              <option value="1" selected="selected">Please select</option>
+              <option value="2">Aeroplane</option>
+              <option value="3">Helicopter</option>
+              <option value="4">Multi Rotor</option>
+              <option value="5">Airship</option>
+              <option value="6">Powered Lift</option>
+            </select>
+          </div>
+          <div class="form-section">
+            <label for="weight">Weight Class/Capacity</label>
+            <select id="weight" name="weight" class="au-select au-select--block" required>
+              <option value="1" selected="selected">Please select</option>
+              <option value="2">Restricted - Up to 25kg</option>
+              <option value="3">Small - Up to 25kg</option>
+              <option value="4">Medium - Up to 150kg</option>
+              <option value="5">Large - More than 150kg</option>
+            </select>
+          </div>
+          <div class="form-section">
+            <label for="capacity">Capacity</label>
+            <select id="capacity" class="au-select au-select--block">
+              <option value="1" selected="selected">Please select</option>
+              <option value="2">Envelope capacity less than 100m&sup3; </option>
+              <option value="3">Envelope capacity more than 100m&sup3; </option>
+            </select>
+          </div>
+
+          <div class="form-section">
+            <label for="rpatypeaero">RPA Type</label>
+            <select id="rpatypeaero" class="au-select au-select--block">
+              <option value="1" selected="selected">Please select</option>
+              <option value="2">Aerosonde MK4.7 (MTOW up to 36.3kg)</option>
+              <option value="3">Aerosonde MK 47 (MTOW up to 32kg)</option>
+              <option value="4">Aerosonde MK 4X (MTOW up to 35kg)</option>
+              <option value="5">Airbus Zephyr 8 (MTOW up to 75kg)</option>
+              <option value="6">Boeing Insitu RQ-21 Blackjack (MTOW up to 61kg)</option>
+              <option value="7">CyberEye 2 (MTOW up to 80kg)</option>
+              <option value="8">CyberHawk (MTOW up to 30kg)</option>
+              <option value="9">CyberWraith (MTOW up to 30kg)</option>
+              <option value="10">Cybird 5 (MTOW up to 54kg)</option>
+              <option value="11">Elson Space Engineering (MTOW up to 80kg)</option>
+              <option value="12">HALE 150 - (MTOW up to 150kg)</option>
+              <option value="13">Phoenix (MTOW up to 65kg)</option>
+              <option value="14">UASci Ltd Kestrel (MTOW up to 150kg)</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-section">
+            <label for="rpatypeair">RPA Type</label>
+            <select id="rpatypeair" class="au-select au-select--block">
+              <option value="1" selected="selected">Please select</option>
+              <option value="2">Airship AS10</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-section">
+            <label for="rpatypeheli">RPA Type</label>
+            <select id="rpatypeheli" class="au-select au-select--block">
+              <option value="1" selected="selected">Please select</option>
+              <option value="2">Cybershark 2 (MTOW up to 80kg)</option>
+              <option value="3">Sungwoo REMO-8H (MTOW up to 120kg)</option>
+              <option value="4">Yamaha Fazer (MTOW up to 120kg)</option>
+              <option value="5">Yamaha RMAX (MTOW up to 99kg)</option>
+              <option value="6">Yamaha RMAX GII (MTOW up to 99kg)</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-section">
+            <label for="rpatypmulti">RPA Type</label>
+            <select id="rpatypemulti" class="au-select au-select--block">
+              <option value="1" selected="selected">Please select</option>
+              <option value="2">Grollo Aerospace MLGRAM Evader (MTOW up to 80kg)</option>
+              <option value="3">Grollo Aerospace Pty Ltd Evader (MTOW up to 99kg)</option>
+              <option value="4">Gryphon Dynamics X8 1400 (MTOW up to 40kg)</option>
+              <option value="5">Gryphon Dynamics X8 Super (MTOW up to 40kg)</option>
+              <option value="6">Gryphon X8 (MTOW up to 45kg)</option>
+              <option value="7">Heliguy Turbine X8 (MTOW up to 40kg)</option>
+              <option value="8">Heliguy Vulcan Super Raven L (MTOW up to 40kg)</option>
+              <option value="9">JAR Aerospace - A-HEX 12 (MTOW up to 100kg)</option>
+              <option value="10">JAR Aerospace - A-HEX 6 (MTOW up to 45kg)</option>
+              <option value="11">JAR Aerospace - A-QUAD 4 (MTOW up to 30kg)</option>
+              <option value="12">JAR Aerospace - A-QUAD 8 (MTOW up to 60kg)</option>
+              <option value="13">Shotover U1 (MTOW up to 40kg)</option>
+              <option value="14">Sky Hero Spyder 12 (MTOW up to 34kg)</option>
+              <option value="15">SkyJib X4-XL (Heavy) (MTOW up to 40kg)</option>
+              <option value="16">U-Drone Robotics AG-10 (MTOW up to 27kg)</option>
+              <option value="17">XM2 Octocopter (MTOW up to 40kg)</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-section">
+            <label for="rpatypepow">RPA Type</label>
+            <select id="rpatypepow" class="au-select au-select--block">
+              <option value="1" selected="selected">Please select</option>
+              <option value="2">Aerosonde HQ (MTOW up to 44kg)</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+		
+		            <p>&nbsp;</p>
+          <div class="form-section hidden" id="other">
+            <label for="textarea">Other <br><span class="form-text">Please provide the make, weight and model</span></label>
+            <textarea class="au-text-input au-text-input--block" name="textarea" id="textarea">
+
+            </textarea>
+          </div>
+
+          <div class="form-section">
+            <p><strong>Please indicate the type of operations you wish to conduct with this drone:</strong></p>
+            <label class="au-control-input">
+              <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
+              <span class="form-text au-control-input__text">RPAS Aerial Work</span>
+            </label>
+            <label class="au-control-input">
+              <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="selected-training">
+              <span class="form-text au-control-input__text">RePL Training</span>
+            </label>
+          </div>
+          <div class="form-section hidden" id="training">
+            <p><strong>Type of training</strong></p>
+            <label class="au-control-input">
+              <input class="au-control-input__input" type="radio" name="radio-ex">
+              <span class="au-control-input__text form-text">Theory and Operational</span>
+            </label>
+            <label class="au-control-input">
+              <input class="au-control-input__input" type="radio" name="radio-ex">
+              <span class="au-control-input__text form-text">Operational only</span>
+            </label>
+          </div>
+		
+		
+		  <a href="app-reoc-tasklist-links-accordian2.html#heading-drones" class="au-btn">
+              Save
+          </a>
+  
+		  
+    </div>
+  </div>
+</section>
+                  </div>
+					
+					
+                  <div class="item">
+                    <h4 id="heading-personnel">3. Personnel <span class="badge badge-secondary float-right">Not started</span></h4>
+                    <p style="color:#666666;" class="m-t-0">Add your Chief Remote Pilot and Maintenance Controller.</p>
+
+										  					                      <section class="au-accordion">
+  <a href="#accordion-crp" class="au-accordion__title js-au-accordion au-accordion--closed" aria-controls="accordion-crp" aria-expanded="true" aria-selected="true" onclick="return AU.accordion.Toggle( this )">
+    Chief Remote Pilot details
+  </a>
+
+  <div class="au-accordion__body au-accordion--closed" id="accordion-crp">
+    <div class="au-accordion__body-wrapper">
+                <h3 class="m-t-2">Chief Remote Pilot details</h3>
+          <section class="row arn-details">
+            <div class="form-section col-md-12" style="padding-bottom:.6rem;padding-top:1rem">
+              <label class="au-control-input">
+                <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="am">
+                <span class="au-control-input__text">I am the Chief Remote Pilot</span>
+              </label>
+            </div><br>
+            <div id="add-person">
+              <div class="form-section col-md-12">
+                <label for="surname">Family Name</label>
+                <span id="surname-error" style="color:#d82c52;"></span>
+                <input class="au-text-input" name="surname" id="surname" type="text">
+              </div>
+              <div class="form-section col-md-12">
+                <label for="arn">ARN</label>
+                <span id="arn-error" style="color:#d82c52;"></span>
+                <input class="au-text-input" name="arn" id="arn" type="number">
+              </div>
+
+            </div>
+
+			<div class="form-section col-md-12">
+              <label for="rpa">Remotely Piloted Aircraft (RPA) Type operated</label>
+              <input class="au-text-input au-text-input--block" name="rpa" id="rpa" type="text">
+			</div>
+            <div class="form-section col-md-12">
+              <label for="time">Total RPA flying time</label>
+              <input class="au-text-input au-text-input--block" name="time" id="time" type="text">
+            </div>
+            <div class="form-section col-md-12">
+              <label for="history">Provide details of relevant qualifications, knowledge and flying history</label>
+              <textarea class="au-text-input au-text-input--block" name="history" id="history">
+
+              </textarea>
+            </div>
+            <div class="form-section col-md-12">
+              <p style="font-weight:bold;"> <span class="am-text">Has this person</span> been charged with or convicted of any criminal offence in Australia, its territories, or a foreign country in the last 10 years?</p>
+              <label class="au-control-input">
+                <input class="au-control-input__input" type="radio" name="radio-ex" id="yes">
+                <span class="au-control-input__text form-text">Yes</span>
+              </label>
+              <label class="au-control-input">
+                <input class="au-control-input__input" type="radio" name="radio-ex" id="no" checked>
+                <span class="au-control-input__text form-text">No</span>
+              </label>
+            </div>
+
+
+            <div id="convicted" class="hidden">
+              <div class="form-section col-md-12">
+                <p style="font-weight:bold;">Was a conviction recorded?</p>
+                <label class="au-control-input">
+                  <input class="au-control-input__input" type="radio" name="convicted-ex">
+                  <span class="au-control-input__text form-text">Yes</span>
+                </label>
+                <label class="au-control-input">
+                  <input class="au-control-input__input" type="radio" name="convicted-ex">
+                  <span class="au-control-input__text form-text">No</span>
+                </label>
+              </div>
+
+              <div class="form-section col-md-12">
+                <label for="textarea">Please provide detials of the penalty imposed and the offence in which a conviction was recorded</label>
+                <textarea class="au-text-input au-text-input--block" name="textarea" id="textarea">
+
+							</textarea>
+              </div>
+
+            </div>
+						<div class="form-section col-md-12">
+              <p style="font-weight:bold;"> <span class="am-text">Has this person</span> been subjected to regulatory action by CASA
+or a foreign regulatory authority in the last 10 years?</p>
+              <label class="au-control-input">
+                <input class="au-control-input__input" type="radio" name="radio-ex-1" id="yes-1">
+                <span class="au-control-input__text form-text">Yes</span>
+              </label>
+              <label class="au-control-input">
+                <input class="au-control-input__input" type="radio" name="radio-ex-1" id="no-1" checked>
+                <span class="au-control-input__text form-text">No</span>
+              </label>
+            </div>
+
+						<div id="by-casa" class="hidden">
+							<div class="form-section col-md-12">
+								<label for="textarea">Please provide detials of the type of action, dates and the authorisation action taken </label>
+								<textarea class="au-text-input au-text-input--block" name="textarea" id="textarea">
+								</textarea>
+							</div>
+						</div>
+            <!--<div class="col-md-12">
+					<button type="button" class="au-btn au-btn--secondary" id="addPilot">
+						Add personnel
+					</button>
+				</div>-->
+          </section>
+		
+		
+			  <a href="#" class="au-btn">
+              Save
+          </a>	
+    </div>
+  </div>
+</section>
+					  					                      <section class="au-accordion">
+  <a href="#accordion-mcd" class="au-accordion__title js-au-accordion au-accordion--closed" aria-controls="accordion-mcd" aria-expanded="true" aria-selected="true" onclick="return AU.accordion.Toggle( this )">
+    Maintenance Controller details
+  </a>
+
+  <div class="au-accordion__body au-accordion--closed" id="accordion-mcd">
+    <div class="au-accordion__body-wrapper">
+                <h3 class="m-t-2">Maintenance Controller details</h3>
+          <section class="row arn-details">
+            <div class="form-section col-md-12" style="padding-bottom:.6rem;padding-top:1rem">
+              <label class="au-control-input">
+                <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="am">
+                <span class="au-control-input__text">I am the Maintenance Controller</span>
+              </label>
+            </div><br>
+            <div id="add-person">
+              <div class="form-section col-md-12">
+                <label for="surname">Family Name</label>
+                <span id="surname-error" style="color:#d82c52;"></span>
+                <input class="au-text-input" name="surname" id="surname" type="text">
+              </div>
+              <div class="form-section col-md-12">
+                <label for="arn">ARN</label>
+                <span id="arn-error" style="color:#d82c52;"></span>
+                <input class="au-text-input" name="arn" id="arn" type="number">
+              </div>
+              <!--<div class="form-section col-12">
+						<label for="select1block">What option?</label>
+							<select id="select1block" class="au-select au-select--block">
+							  <option value="">Your Role</option>
+							  <option value="1">Chief Remote Pilot (CRP)</option>
+							  <option value="2">RPA Pilot</option>
+							  <option value="3">Maintenance Controller</option>
+								<option value="3">Authorised RPAS Maintanier</option>
+							</select>
+					</div>-->
+            </div>
+
+
+            <div class="form-section col-md-12">
+              <label for="textarea">Provide details of experience relevant to maintaining RPA</label>
+              <textarea class="au-text-input au-text-input--block" name="textarea" id="textarea">
+
+              </textarea>
+            </div>
+
+            <div class="form-section col-md-12">
+              <p style="font-weight:bold;">Does the nominated MC hold any other positions within yours, or any other aviation organisation?</p>
+              <label class="au-control-input">
+                <input class="au-control-input__input" type="radio" name="radio-ex-mc" id="yes-mc">
+                <span class="au-control-input__text form-text">Yes</span>
+              </label>
+              <label class="au-control-input">
+                <input class="au-control-input__input" type="radio" name="radio-ex-mc" id="no-mc">
+                <span class="au-control-input__text form-text">No</span>
+              </label>
+            </div>
+            <div class="form-section col-md-12 hidden" id="other-mc">
+              <label for="textarea">Provide specific details including each position, description of duties and responsibilities</label>
+              <textarea class="au-text-input au-text-input--block" name="textarea" id="textarea">
+
+              </textarea>
+            </div>
+
+
+            <div class="form-section col-md-12 previous-q">
+              <p style="font-weight:bold;"> <span class="am-text">Has this person</span> been charged with or convicted of any criminal offence in Australia, its territories, or a foreign country in the last 10 years?</p>
+              <label class="au-control-input">
+                <input class="au-control-input__input" type="radio" name="radio-ex" id="yes">
+                <span class="au-control-input__text form-text">Yes</span>
+              </label>
+              <label class="au-control-input">
+                <input class="au-control-input__input" type="radio" name="radio-ex" id="no" checked>
+                <span class="au-control-input__text form-text">No</span>
+              </label>
+            </div>
+
+
+            <div id="convicted" class="hidden previous-q">
+              <div class="form-section col-md-12">
+                <p style="font-weight:bold;">Was a conviction recorded?</p>
+                <label class="au-control-input">
+                  <input class="au-control-input__input" type="radio" name="convicted-ex">
+                  <span class="au-control-input__text form-text">Yes</span>
+                </label>
+                <label class="au-control-input">
+                  <input class="au-control-input__input" type="radio" name="convicted-ex">
+                  <span class="au-control-input__text form-text">No</span>
+                </label>
+              </div>
+
+              <div class="form-section col-md-12">
+                <label for="textarea">Please provide detials of the penalty imposed and the offence in which a conviction was recorded</label>
+                <textarea class="au-text-input au-text-input--block" name="textarea" id="textarea">
+
+							</textarea>
+              </div>
+
+            </div>
+						<div class="form-section col-md-12 previous-q">
+              <p style="font-weight:bold;"> <span class="am-text">Has this person</span> been subjected to regulatory action by CASA
+or a foreign regulatory authority in the last 10 years?</p>
+              <label class="au-control-input">
+                <input class="au-control-input__input" type="radio" name="radio-ex-1" id="yes-1">
+                <span class="au-control-input__text form-text">Yes</span>
+              </label>
+              <label class="au-control-input">
+                <input class="au-control-input__input" type="radio" name="radio-ex-1" id="no-1" checked>
+                <span class="au-control-input__text form-text">No</span>
+              </label>
+            </div>
+
+						<div id="by-casa" class="hidden">
+							<div class="form-section col-md-12">
+								<label for="textarea">Please provide detials of the type of action, dates and the authorisation action taken </label>
+								<textarea class="au-text-input au-text-input--block" name="textarea" id="textarea">
+								</textarea>
+							</div>
+						</div>
+            <!--<div class="col-md-12">
+					<button type="button" class="au-btn au-btn--secondary" id="addPilot">
+						Add personnel
+					</button>
+				</div>-->
+          </section>
+			  <a href="#" class="au-btn">
+              Save
+          </a>		
+    </div>
+  </div>
+</section> 
+				</div>
+					
+					
+                  <div class="item">
+                    <h4 id="heading-docs">4. Documents <span class="badge badge-secondary float-right">Not started</span></h4>
+                    <p style="color:#666666;" class="m-t-0">Upload your manual and required document for review.</p>
+
+					 <section class="au-accordion">
+  <a href="#accordion-add-manual" class="au-accordion__title js-au-accordion au-accordion--closed" aria-controls="accordion-add-manual" aria-expanded="true" aria-selected="true" onclick="return AU.accordion.Toggle( this )">
+     Manual
+  </a>
+
+  <div class="au-accordion__body au-accordion--closed" id="accordion-add-manual">
+    <div class="au-accordion__body-wrapper">
+      							<section class="m-t-2">
+							<h3>Upload your manual</h3>
+							<p class="au-callout">Accepted file types are PDF documents (.pdf) and the following image formats: .jpg, .bmp and .png</p>
+							<input type="file" id="myFile" class="inputfile" onchange="myFunction()"><br>
+							<label for="myFile">Choose a file</label>
+
+							<p id="file"></p>
+						</section><p>&nbsp;</p>
+    	  <a href="#" class="au-btn">
+              Save
+          </a>	
+	  </div>
+  </div>
+</section>
+					  					                      <section class="au-accordion">
+  <a href="#accordion-add-operations-procedure" class="au-accordion__title js-au-accordion au-accordion--closed" aria-controls="accordion-add-operations-procedure" aria-expanded="true" aria-selected="true" onclick="return AU.accordion.Toggle( this )">
+     Operations procedure (Library)
+  </a>
+
+  <div class="au-accordion__body au-accordion--closed" id="accordion-add-operations-procedure">
+    <div class="au-accordion__body-wrapper">
+      							<section class="m-t-2">
+							<h3>Upload your Operations procedure (Library)</h3>
+							<p class="au-callout">Accepted file types are PDF documents (.pdf) and the following image formats: .jpg, .bmp and .png</p>
+							<input type="file" id="myFile" class="inputfile" onchange="myFunction()"><br>
+							<label for="myFile">Choose a file</label>
+
+							<p id="file"></p>
+						</section><p>&nbsp;</p>
+		  <a href="#" class="au-btn">
+              Save
+          </a>	
+    </div>
+  </div>
+</section>
+					  					                      <section class="au-accordion">
+  <a href="#accordion-add-training-syllabus" class="au-accordion__title js-au-accordion au-accordion--closed" aria-controls="accordion-add-training-syllabus" aria-expanded="true" aria-selected="true" onclick="return AU.accordion.Toggle( this )">
+     Training Syllabus
+  </a>
+
+  <div class="au-accordion__body au-accordion--closed"  id="accordion-add-training-syllabus">
+    <div class="au-accordion__body-wrapper">
+      							<section class="m-t-2">
+							<h3>Upload your Training Syllabus</h3>
+							<p class="au-callout">Accepted file types are PDF documents (.pdf) and the following image formats: .jpg, .bmp and .png</p>
+							<input type="file" id="myFile" class="inputfile" onchange="myFunction()"><br>
+							<label for="myFile">Choose a file</label>
+
+							<p id="file"></p>
+						</section><p>&nbsp;</p>
+		  <a href="#" class="au-btn">
+              Save
+          </a>	
+    </div>
+  </div>
+</section>
+					  					                      <section class="au-accordion">
+  <a href="#accordion-add-maintenance-and-flight" class="au-accordion__title js-au-accordion au-accordion--closed" aria-controls="accordion-add-maintenance-and-flight" aria-expanded="true" aria-selected="true" onclick="return AU.accordion.Toggle( this )">
+     Maintenance Manual and Flight Manual
+  </a>
+
+  <div class="au-accordion__body au-accordion--closed" id="accordion-add-maintenance-and-flight">
+    <div class="au-accordion__body-wrapper">
+      							<section class="m-t-2">
+							<h3>Upload your Maintenance Manual and Flight Manual</h3>
+							<p class="au-callout">Accepted file types are PDF documents (.pdf) and the following image formats: .jpg, .bmp and .png</p>
+							<input type="file" id="myFile" class="inputfile" onchange="myFunction()"><br>
+							<label for="myFile">Choose a file</label>
+
+							<p id="file"></p>
+						</section><p>&nbsp;</p>
+		<a href="#" class="au-btn">
+              Save
+          </a>			
+    </div>
+  </div>
+</section>  
+					  
+					  
+					  
+					  
+					  
+					  
+					  
+                  </div>
+
+                
+
+										<div id="proceed-payment">
+												<a href="app-reoc-summary.html" class="au-btn" id="next">Finalise Application</a>
+												<!--<p class="westpac">You will be directed to Westpac for payment</p>-->
+											</div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer-wrapper">
+          <iframe src="footer.html" frameborder="0" border="0" scrolling="no"></iframe>
+        </div>
+      </div>
+
+
+
+  </main>
+  <script>
+
+
+
+  
+
+
+$("#next").bind("click",function(event){
+var savedCount = $(".badge-success").length;
+
+
+if(savedCount == 4){
+
+} else {
+$("#dec-error").removeClass("hidden");
+
+
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#dec-error").offset().top
+    }, 500);
+
+
+event.preventDefault();
+return false;
+}
+
+
+  $('#heading-cert span').addClass('hidden');
+    var type = window.location.hash.substr(1);
+		if (type == 'cert') {
+      $('#names').removeClass('hidden');
+      $('#heading-cert span').removeClass('badge-secondary, hidden').text('Saved').addClass('badge-success');
+      //$('#personnel-add').removeClass('gray');
+				$('#delete-yes-app').click(function(){
+		      $('#names, #heading-cert span').addClass('hidden');
+		    });
+    }
+    if (type == 'drone') {
+      $('#drones, #names').removeClass('hidden');
+			$('#heading-cert span').removeClass('badge-secondary, hidden').text('Saved').addClass('badge-success');
+      $('#heading-drones span').removeClass('badge-secondary').text('Saved').addClass('badge-success');
+      //$('#personnel-add').removeClass('gray');
+		 /* $('html, body').animate({
+			scrollTop: $("#heading-drones").offset().top - 150
+			}, 2700);*/
+    }
+    if (type == 'personnel') {
+      $('#drones').removeClass('hidden');
+      $('#personnel-add-crp').addClass('hidden');
+      $('#heading-cert span').removeClass('badge-secondary, hidden').text('Saved').addClass('badge-success');
+      $('#heading-drones span').removeClass('badge-secondary').text('Saved').addClass('badge-success');
+      $('#heading-personnel span').removeClass('badge-secondary').text('Saved').addClass('badge-success');
+      //$('#personnel-add').removeClass('gray');
+
+      $('#personnel').removeClass('hidden');
+      $('#personnel').parent().find('p').remove();
+
+      $('#heading-personnel span').removeClass('hidden');
+      //$('#upload-doc').removeClass('gray');
+	  /*$('html, body').animate({
+			scrollTop: $("#heading-personnel").offset().top - 150
+			}, 2800);*/
+    }
+    if (type == 'personnel-mc') {
+      $('#drones,#personnel-mc').removeClass('hidden');
+      $('#personnel-add-crp, #personnel-add-mc').addClass('hidden');
+      $('#heading-cert span').removeClass('badge-secondary, hidden').text('Saved').addClass('badge-success');
+      $('#heading-drones span').removeClass('badge-secondary').text('Saved').addClass('badge-success');
+      $('#heading-personnel span').removeClass('badge-secondary').text('Saved').addClass('badge-success');
+      //$('#personnel-add').removeClass('gray');
+
+      $('#personnel').removeClass('hidden');
+      $('#personnel').parent().find('p').remove();
+
+      $('#heading-personnel span').removeClass('hidden');
+      //$('#upload-doc').removeClass('gray');
+	   /*$('html, body').animate({
+			scrollTop: $("#heading-personnel").offset().top - 150
+			}, 2800);*/
+    }
+    if (type == 'manual') {
+      $('#drones').removeClass('hidden');
+      $('#heading-drones span').removeClass('badge-secondary').text('Saved').addClass('badge-success');
+      //$('#personnel-add').removeClass('gray');
+
+      $('#personnel').removeClass('hidden');
+      $('#personnel').parent().find('p').remove();
+			$('#heading-cert span').removeClass('badge-secondary, hidden').text('Saved').addClass('badge-success');
+      $('#heading-personnel span').removeClass('badge-secondary').text('Saved').addClass('badge-success');
+			$('#heading-docs span').removeClass('badge-secondary').text('Saved').addClass('badge-success');
+      //$('#heading-docs span').removeClass('hidden');
+
+      $('#manual').removeClass('hidden');
+      $('#next').removeClass('hidden');
+      $('#upload-manual').addClass('hidden');
+	  /*$('html, body').animate({
+			scrollTop: $("#heading-docs").offset().top - 150
+			}, 3000);*/
+    }
+    if (type == 'library') {
+      $('#drones, #library, .dec, #proceed-payment, #manual, #personnel, #personnel-mc,#names').removeClass('hidden');
+      $('#heading-drones span').removeClass('badge-secondary').text('Saved').addClass('badge-success');
+
+      $('#personnel').parent().find('p').remove();
+			$('#heading-cert span').removeClass('badge-secondary, hidden').text('Saved').addClass('badge-success');
+      $('#heading-personnel span').removeClass('badge-secondary').text('Saved').addClass('badge-success');
+			$('#heading-docs span').removeClass('badge-secondary').text('Saved').addClass('badge-success');
+
+      $('#upload-manual, #upload-library, #personnel-add-crp, #personnel-add-mc').addClass('hidden');
+	   /*$('html, body').animate({
+			scrollTop: $("#heading-docs").offset().top - 150
+			}, 3000);*/
+    }
+    if (type == 'syllabus') {
+      $('#drones, #library, .dec, #proceed-payment, #manual, #personnel, #personnel-mc,#names, #syllabus').removeClass('hidden');
+      $('#heading-drones span').removeClass('badge-secondary').text('Saved').addClass('badge-success');
+
+      $('#personnel').parent().find('p').remove();
+			$('#heading-cert span').removeClass('badge-secondary, hidden').text('Saved').addClass('badge-success');
+      $('#heading-personnel span').removeClass('badge-secondary').text('Saved').addClass('badge-success');
+			$('#heading-docs span').removeClass('badge-secondary').text('Saved').addClass('badge-success');
+
+      $('#upload-manual, #upload-syllabus, #upload-library, #personnel-add-crp, #personnel-add-mc').addClass('hidden');
+	  /* $('html, body').animate({
+			scrollTop: $("#heading-docs").offset().top - 150
+			}, 3000);*/
+    }
+    if (type == 'flight') {
+      $('#drones, #library, #proceed-payment, #manual, #personnel, #personnel-mc, #names, #syllabus, #flight').removeClass('hidden');
+      $('#heading-drones span').removeClass('badge-secondary').text('Saved').addClass('badge-success');
+
+      $('#personnels').parent().find('p').remove();
+			$('#heading-cert span').removeClass('badge-secondary, hidden').text('Saved').addClass('badge-success');
+      $('#heading-personnel span').removeClass('badge-secondary').text('Saved').addClass('badge-success');
+			$('#heading-docs span').removeClass('badge-secondary').text('Saved').addClass('badge-success');
+
+      $('#upload-manual, #upload-aircraft, #upload-syllabus, #upload-library, #personnel-add-crp, #personnel-add-mc').addClass('hidden');
+	  /* $('html, body').animate({
+			scrollTop: $("#heading-docs").offset().top - 150
+			}, 3000);*/
+    }
+		if (type == 'review') {
+      $('#drones').removeClass('hidden');
+      $('#personnel').removeClass('hidden');
+
+      $('#personnel').parent().find('p').remove();
+      $('#manual, #names').removeClass('hidden');
+      //$('#next').addClass('hidden');
+
+			$('.au-callout, .au-btn--secondary').addClass('hidden');
+			$('h1').text('Summary of your ReOC');
+			$('#names a, #drones a, #personnel a, #manual a.del, p.lead').remove();
+
+			$('#heading-drones span').addClass('hidden');
+			$('#heading-cert span').addClass('hidden');
+      $('#heading-personnel span').addClass('hidden');
+			$('#heading-docs span').addClass('hidden');
+    }
+	  
+	  
+	  
+	 });	
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  </script>
+	  <script>
+	  
+	  
+	  
+	    $( document ).ready( function () {
+    $("#add-drone").click(function() {
+      $("input[name=checkbox-ex]").prop("checked", false);
+      $("option").prop("selected", false);
+      $(".student, #save").removeClass("hidden");
+			$("#training").addClass("hidden");
+      $('html').scrollTop();
+      $("select, input").click(function() {
+        $("#save").addClass('hidden');
+      });
+    });
+
+    $('#rpatypemulti, #rpatypeaero, #rpatypeair, #rpatypeheli, #rpatypmulti, #rpatypepow').on('change', function() {
+      if ($('#rpatypemulti,#rpatypeaero, #rpatypeair, #rpatypeheli, #rpatypmulti, #rpatypepow').val() == 'Other'){
+        $('#other').removeClass('hidden');
+      }else{
+        $('#other').addClass('hidden');
+      }
+    });
+
+
+    var type = window.location.hash.substr(1);
+    if (type == 'org') {
+      $('a#home').attr("href", "profile-dashboard.html#org-wendy");
+      $('a#bread-home').attr("href", "dashboard-org.html#save").text("Wendy's Wedding");
+      $('.save-exit a').attr("href", "dashboard-org.html#save");
+      $('a#next').attr("href", "add-personnel-crp.html#org");
+    }
+    if (type == 'task') {
+      //$('a#next').attr("href", "app-reoc-tasklist-links.html#drone").text("Save");
+      //$('.save-exit a').attr("href","app-reoc-tasklist.html").text('Cancel');
+      $('#cancel-help-text').remove();
+      $('#add-drone').addClass('hidden');
+    }
+
+
+    $('#capacity').parent().addClass('hidden');
+    //$('.save-exit').hide();
+    $('#category').on('change', function() {
+      $('.save-exit').show();
+    });
+    $('#category').on('change', function() {
+      var c = document.getElementById("category");
+      var cVal = c.options[c.selectedIndex].value;
+      if (cVal == 5) {
+        $('#capacity').parent().removeClass('hidden');
+        $('#rpatypeair').parent().removeClass('hidden');
+        $('#weight').parent().addClass('hidden');
+        $('#rpatypeaero').parent().addClass('hidden');
+        $('#rpatypeheli').parent().addClass('hidden');
+        $('#rpatypemulti').parent().addClass('hidden');
+        $('#rpatypepow').parent().addClass('hidden');
+      }
+    });
+    $('#selected-training').on('change', function() {
+      if ($('#selected-training').is(':checked')) {
+        $('#training').removeClass('hidden');
+      } else {
+        $('#training').addClass('hidden');
+      }
+    });
+
+    $('#category').on('change', function() {
+      var c = document.getElementById("category");
+      var cVal = c.options[c.selectedIndex].value;
+      if (cVal == 1 || cVal == 2 || cVal == 3 || cVal == 4 || cVal == 6) {
+        $('#capacity').parent().addClass('hidden');
+        $('#rpatypeair').parent().addClass('hidden');
+      }
+    });
+
+    $('#weight').parent().addClass('hidden');
+    //$('.save-exit').hide();
+    $('#category').on('change', function() {
+      $('.save-exit').show();
+    });
+    $('#category').on('change', function() {
+      var c = document.getElementById("category");
+      var cVal = c.options[c.selectedIndex].value;
+      if (cVal == 1 || cVal == 2 || cVal == 3 || cVal == 4 || cVal == 6) {
+        $('#weight').parent().removeClass('hidden');
+      }
+    });
+
+    $('#rpatypeaero').parent().addClass('hidden');
+    //$('.save-exit').hide();
+    $('#weight, #category').on('change', function() {
+      $('.save-exit').show();
+    });
+
+    $('#weight').on('change', function() {
+      var c = document.getElementById("category");
+      var cVal = c.options[c.selectedIndex].value;
+      var w = document.getElementById("weight");
+      var wVal = w.options[w.selectedIndex].value;
+
+      if (cVal == 2 && wVal == 4) {
+        $('#rpatypeaero').parent().removeClass('hidden');
+      }
+      if (cVal == 2 && wVal == 5) {
+        $('#rpatypeaero').parent().removeClass('hidden');
+      }
+      if (wVal == 1 || wVal == 2 || wVal == 3) {
+        $('#rpatypeaero').parent().addClass('hidden');
+      }
+    });
+
+    $('#rpatypeair').parent().addClass('hidden');
+    //$('.save-exit').hide();
+    $('#weight, #category').on('change', function() {
+      $('.save-exit').show();
+    });
+    $('#weight').on('change', function() {
+      var c = document.getElementById("category");
+      var cVal = c.options[c.selectedIndex].value;
+      var w = document.getElementById("weight");
+      var wVal = w.options[w.selectedIndex].value;
+
+      if (cVal == 5 && wVal == 4) {
+        $('#rpatypeair').parent().removeClass('hidden');
+      }
+      if (cVal == 5 && wVal == 5) {
+        $('#rpatypeair').parent().removeClass('hidden');
+      }
+      if (wVal == 1 || wVal == 2 || wVal == 3) {
+        $('#rpatypeair').parent().addClass('hidden');
+      }
+    });
+
+    $('#rpatypeheli').parent().addClass('hidden');
+    //$('.save-exit').hide();
+    $('#weight, #category').on('change', function() {
+      $('.save-exit').show();
+    });
+    $('#weight').on('change', function() {
+      var c = document.getElementById("category");
+      var cVal = c.options[c.selectedIndex].value;
+      var w = document.getElementById("weight");
+      var wVal = w.options[w.selectedIndex].value;
+
+      if (cVal == 3 && wVal == 4) {
+        $('#rpatypeheli').parent().removeClass('hidden');
+      }
+      if (cVal == 3 && wVal == 5) {
+        $('#rpatypeheli').parent().removeClass('hidden');
+      }
+      if (wVal == 1 || wVal == 2 || wVal == 3) {
+        $('#rpatypeair').parent().addClass('hidden');
+      }
+    });
+
+    $('#rpatypemulti').parent().addClass('hidden');
+    //$('.save-exit').hide();
+    $('#weight, #category').on('change', function() {
+      $('.save-exit').show();
+    });
+    $('#weight').on('change', function() {
+      var c = document.getElementById("category");
+      var cVal = c.options[c.selectedIndex].value;
+      var w = document.getElementById("weight");
+      var wVal = w.options[w.selectedIndex].value;
+
+      if (cVal == 4 && wVal == 4) {
+        $('#rpatypemulti').parent().removeClass('hidden');
+      }
+      if (cVal == 4 && wVal == 5) {
+        $('#rpatypemulti').parent().removeClass('hidden');
+      }
+      if (wVal == 1 || wVal == 2 || wVal == 3) {
+        $('#rpatypemulti').parent().addClass('hidden');
+      }
+    });
+
+    $('#rpatypepow').parent().addClass('hidden');
+    //$('.save-exit').hide();
+    $('#weight, #category').on('change', function() {
+      $('.save-exit').show();
+    });
+    $('#weight').on('change', function() {
+      var c = document.getElementById("category");
+      var cVal = c.options[c.selectedIndex].value;
+      var w = document.getElementById("weight");
+      var wVal = w.options[w.selectedIndex].value;
+
+      if (cVal == 6 && wVal == 4) {
+        $('#rpatypepow').parent().removeClass('hidden');
+      }
+      if (cVal == 6 && wVal == 5) {
+        $('#rpatypepow').parent().removeClass('hidden');
+      }
+      if (wVal == 1 || wVal == 2 || wVal == 3) {
+        $('#rpatypepow').parent().addClass('hidden');
+      }
+    });
+    $('#back-yes-app').click(function(){
+      window.location.href="app-reoc-tasklist-links.html#drone";
+    });
+
+	//Form Validation
+	// add the rule here
+	 $.validator.addMethod("valueNotEquals", function(value, element, arg){
+	  return arg !== value;
+	 }, "Value must not equal arg.");
+
+	$( "#drone" ).validate( {
+				rules: {
+					category: { valueNotEquals: "1" },
+					weight:{ valueNotEquals: "1" },
+					'checkbox-ex': {
+										required: true
+									}
+				},
+				messages: {
+					category: { valueNotEquals: "Please select an option" },
+					weight: { valueNotEquals: "Please select an option" },
+					'checkbox-ex': {
+								required: "You must select at least 1 operation"
+							}
+				}
+			} );
+
+	});
+	  
+	  
+	  
+	  
+	  
+	
+
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+  </script>
+
+</body>
+
+</html>

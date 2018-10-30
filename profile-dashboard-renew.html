@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>myCASA</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/furnace.min.css">
+  <link rel="stylesheet" href="css/lead.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="live-demo au-body au-grid arn-application">
+
+  <main class="au-grid">
+
+
+    <header class="au-header logo au-body au-body--dark" role="banner">
+      <div class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-xs-7">
+              <a class="au-header__brand" href="dashboard.html">
+                <img class="au-header__brand-image" alt="my CASA" src="img/CASALOGO-white-i.svg">
+              </a>
+            </div>
+            <div class="col-md-3 col-xs-5"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="banner">
+      <div class="container">
+        <style>
+      	.banner {padding-left: 25px;}
+				.banner {padding-top: 10px;}
+				.banner {padding-bottom: 10px;}
+				</style>
+        This service is currently in beta, we encourage you to <a href="feedback.html">provide feedback</a>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="col-md-12">
+
+        <header class="au-header" role="banner">
+          <h1 class="au-header-heading">Welcome to myCASA</h1>
+          <br>
+          <div><strong>What profile do you want to use to access myCASA?</strong></div>
+          <br>
+          <div class="casa-cards">
+          <a class="casa-card individual m-t-1" id="individual" href="dashboard-renew.html">
+
+              <h3 class="m-t-0">Wendy Williams<br><br></h3>
+
+              <div class="casa-card-detail">
+                <div class="icon"><img src="img/ind.svg" alt="Individual"></div>
+
+                <p>Your individual account<br>ARN: 1234567<br>CASA.ReOC.0634<br></p>
+
+              </div>
+
+            </a>
+
+            <a class="casa-card organisation m-t-1 hidden" id="organisation" href="dashboard-renew.html#org">
+
+              <h3 class="m-t-0">Wendy's Weddings Pty Ltd</h3>
+
+              <div class="casa-card-detail m-t-0">
+                <div class="icon"><img src="img/org.svg" alt="Organisation"></div>
+
+                <p>Organisational account<br>
+                  ARN: 7654321<br>
+                  CASA.ReOC.0634<br>
+                  Your role: CEO
+                </p>
+              </div>
+
+            </a>
+
+						<a class="casa-card new-organisation text-center m-t-1" id="new-organisation" href="org-details.html">
+
+							<h3>New organisation?</h3>
+              <br>
+							<div class="casa-card-detail">
+								<div class="icon"></div>
+
+								<p>
+								</p>
+							</div>
+
+						</a>
+
+          </div>
+
+        </header>
+
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-wrapper">
+        <iframe src="footer.html" frameborder="0" border="0" scrolling="no"></iframe>
+      </div>
+    </div>
+
+
+  </main>
+
+  <script type="text/javascript" src="/furnace.min.js"></script>
+  <script src="jquery.min.js"></script>
+  <script src="jquery.js"></script>
+  <script>
+    var type = window.location.hash.substr(1);
+    if (type == 'in-progress') {
+      $('#in-progress').removeClass('hidden');
+      /*$('#link-active').addClass('hidden');
+      $('#link-active').find('h3').addClass('hidden');*/
+      $('#save, #link-active').addClass('hidden');
+    }
+    if (type == 'save') {
+      $('#save').removeClass('hidden');
+
+      $('#in-progress').addClass('hidden');
+      /*$('#link-active').removeClass('hidden');
+      $('#link-active').find('h3').removeClass('hidden');*/
+    }
+
+
+    var type = window.location.hash.substr(1);
+    if (type == 'in-progress') {
+      $('#signout').attr("href", "mycasa-update.html");
+    } else if (type !== 'org') {
+      //alert(3);
+      $('#signout').attr("href", "mycasa.html");
+    }
+  </script>
+
+
+
+</body>
+
+</html>
