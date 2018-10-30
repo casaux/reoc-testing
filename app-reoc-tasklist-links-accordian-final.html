@@ -170,16 +170,21 @@
                           <div class="col-md-2 col-xs-3">Up to 25kg</div>
                           <div class="col-md-3 col-xs-3">N/A</div>
                           <div class="col-md-3 col-xs-3">RPAS Aerial Work</div>
-                          <div class="col-md-1 col-xs-3"><a href="#" id="edit-rpa">Edit</a></div>
+                          <div class="col-md-1 col-xs-3"><a href="#">Edit</a></div>
                           <div class="col-md-1 col-xs-3"><a href="#">Delete</a></div>
                         </li>
-                      </ul>
-                    </div>
-                    
-                    
-        <div id="add-rpa"><a class="au-cta-link" href="#" style="font-size:1.1rem;font-weight:500;">Add RPA details</a></div>
-        
-        <div id="add-rpa-form" style="overflow:hidden;">
+                         <li class="row" style="background:#f9f9f9;">
+                          <div class="col-md-2 col-xs-3">Aeroplane</div>
+                          <div class="col-md-2 col-xs-3">Up to 25kg</div>
+                          <div class="col-md-3 col-xs-3">N/A</div>
+                          <div class="col-md-3 col-xs-3">RPAS Aerial Work</div>
+                          <div class="col-md-1 col-xs-3"><a href="#" id="edit-rpa">Edit</a></div>
+                          <div class="col-md-1 col-xs-3"><a href="#">Delete</a></div>
+                          
+                          
+                          
+                          
+               <div id="add-rpa-form" style="overflow:hidden;padding-left:1em;padding-bottom:2em;">
     
     
     
@@ -200,17 +205,18 @@
                 <div class="col-md-3 col-sm-3 col-xs-12">RPAS Aerial Work</div>
                 <div class="col-md-2 col-sm-2 col-xs-12"><a href="#">Delete</a></div>
               </li>
+              
             </ul>
             <p>&nbsp;</p>
           </div>
 		
 		  
-		  <h3 class="m-t-2">Add Remotely Piloted Aircraft details</h3>
+		  <h3 class="m-t-2">Edit Remotely Piloted Aircraft details</h3>
           <div class="form-section m-t-1">
             <label for="category">Category</label>
             <select id="category" name="category" class="au-select au-select--block" required>
-              <option value="1" selected="selected">Please select</option>
-              <option value="2">Aeroplane</option>
+              <option value="1">Please select</option>
+              <option value="2" selected="selected">Aeroplane</option>
               <option value="3">Helicopter</option>
               <option value="4">Multi Rotor</option>
               <option value="5">Airship</option>
@@ -345,9 +351,30 @@
           </a>
   
   			&nbsp; &nbsp; &nbsp; <a href="#" id="add-rpa-cancel">Cancel</a>
-  
+  <br /> <br /> <br /> <br />
 		   </div>
-    </div>
+    </div>           
+                          
+                          
+                          
+                          
+                          
+                        </li>
+                         <li class="row">
+                          <div class="col-md-2 col-xs-3">Helicopter</div>
+                          <div class="col-md-2 col-xs-3">Up to 25kg</div>
+                          <div class="col-md-3 col-xs-3">N/A</div>
+                          <div class="col-md-3 col-xs-3">RPAS Aerial Work</div>
+                          <div class="col-md-1 col-xs-3"><a href="#">Edit</a></div>
+                          <div class="col-md-1 col-xs-3"><a href="#">Delete</a></div>
+                        </li>
+                      </ul>
+                    
+                    <br />  
+                    
+        <div id="add-rpa"><a class="au-cta-link" href="#" style="font-size:1.1rem;font-weight:500;">Add RPA details</a></div>
+        
+        
   </div>
 </section>
                   </div>
@@ -1003,7 +1030,7 @@ $("#add-rpa-form").css("display","block");
 addRPAHeight = $("#add-rpa-form").height();
 $("#add-rpa-form").css("height","0");
 
-	$("#add-rpa-form").animate({height:"400px"},200);
+	$("#add-rpa-form").animate({height:"450px"},200);
 
 	event.preventDefault();
 	$(this).css("display","none");
